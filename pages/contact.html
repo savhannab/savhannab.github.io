@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Savhanna Beene</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <h2> Savhanna Beene </h2>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section contact-hero">
+      <div class="container fade-in">
+        <p class="work">Contact</p>
+        <div class="layout-split contact-layout">
+          <div class="section-heading">
+            <h1 class="contact-title">Let’s connect.</h1>
+            <p>
+              I’m interested in internships, research collaborations, and continuous 
+              learning.
+            </p>
+
+            <div class="contact-highlight">
+              <h3>What to reach out about</h3>
+              <ul class="contact-list">
+                <li>UX research or interface design projects</li>
+                <li>Software engineering internships</li>
+                <li>Research labs and HCI/AI collaborations</li>
+                <li>Career opportunities</li>
+              </ul>
+            </div>
+
+            <div class="contact-alt-links">
+              <p class="contact-alt-label">Or reach me directly:</p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:savhanna.t.l.preston@gmail.com">savhanna.t.l.preston@gmail.com</a>
+              </p>
+              <p>
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/savhanna-beene-756024b8/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h2>Send a message</h2>
+            <p class="contact-card-sub">
+              I look forward to hearing from you.
+            </p>
+
+            <form class="contact-form" action="mailto:savhanna.t.l.preston@gmail.com" method="post" enctype="text/plain">
+              <div class="field-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+              </div>
+
+              <div class="field-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+              </div>
+
+              <div class="field-group">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text">
+              </div>
+
+              <div class="field-group">
+                <label for="role">Your background (optional)</label>
+                <select id="role" name="role">
+                  <option value="">Select one</option>
+                  <option value="student">Student</option>
+                  <option value="recruiter">Recruiter</option>
+                  <option value="researcher">Researcher</option>
+                  <option value="engineer-designer">Engineer / Designer</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <label for="message">Message</label>
+              <div class="field-group">
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn primary-btn contact-submit">
+                Send message
+              </button>
+            </form>
+
+            <p class-name="contact-note">
+              This form uses your default email client. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© Savhanna Beene</p>
+    </div>
+  </footer>
+
+</body>
+</html>
