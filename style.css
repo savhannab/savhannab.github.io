@@ -171,7 +171,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 480px) {
   .container {
     flex-direction: column;
     padding: 2rem;
@@ -184,22 +184,6 @@ body {
   .columns {
     flex-direction: column;
     gap: 1.5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .projects-card {
-    width: 100%;
-  }
-  .project-content,
-  .project-title,
-  .project-description {
-    max-width: 100%;
-    overflow-wrap: break-word;
   }
 }
 
@@ -217,6 +201,9 @@ body {
   box-shadow: 0 18px 40px rgba(0,0,0,0.07);
   border: 1px solid rgba(0,0,0,0.06);
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Thumbnails */
@@ -233,18 +220,22 @@ body {
 /* Content */
 .project-content {
   padding: 1.25rem 1.4rem 1.1rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .project-title {
   font-family: "Playfair Display", serif;
   font-size: 1.15rem;
   color: #222;
+  max-width: 100%;
 }
 
 .project-description {
   font-size: 0.95rem;
   color: #555;
   text-decoration: none;
+  max-width: 100%;
 }
 
 a {
@@ -298,4 +289,29 @@ a {
 
 .field-group {
   padding: 5px;
+}
+
+/* Mobile Fixes */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    padding: 1.2rem;
+    gap: 1.5rem;
+    max-width: 100% !important;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-content,
+  .project-title,
+  .project-description {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
 }
