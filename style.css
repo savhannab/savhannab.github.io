@@ -187,6 +187,22 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .projects-card {
+    width: 100%;
+  }
+  .project-content,
+  .project-title,
+  .project-description {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+}
+
 /* Projects*/
 
 .projects-grid {
